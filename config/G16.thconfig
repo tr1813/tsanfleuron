@@ -1,0 +1,11 @@
+source ../data/G16/G16.th 
+
+input ../layouts/detailed-p.thl 
+layout local 
+    copy detailed-p
+    scale 1 500
+
+endlayout
+
+export map -o ../outputs/G16-plan.pdf -layout local
+export model -o ../outputs/G16.3d
