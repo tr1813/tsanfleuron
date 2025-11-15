@@ -1,3 +1,9 @@
+# therion outputs
+*outputs/
+*.pdf
+*.log 
+*.3d
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
