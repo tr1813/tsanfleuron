@@ -1,8 +1,8 @@
 # therion outputs
-*outputs/
-*.pdf
-*.log 
-*.3d
+outputs/
+.pdf
+.log 
+.3d
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
