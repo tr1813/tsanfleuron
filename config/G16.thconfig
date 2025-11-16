@@ -1,11 +1,24 @@
 source ../data/G16/G16.th 
 
 input ../layouts/detailed-p.thl 
-layout local 
-    copy detailed-p
-    scale 1 500
 
-endlayout
+layout local
+  copy detailed-p
+  scale 1 500
+  legend off
+  map-header 0 0 off
+  symbol-show point label
+  symbol-hide point passage-height
+  symbol-assign line wall:blocks MYEE
+  
+  symbol-hide point station-name 
+  symbol-hide line survey
+  symbol-hide point station
+  color map-bg transparent
+  symbol-colour line rope [70 10 0]
+  symbol-colour line u:deviation [70 10 0]
+  symbol-colour point anchor [70 10 0]
+endlayout 
 
 export map -o ../outputs/G16-plan.pdf -layout local
 export model -o ../outputs/G16.3d
