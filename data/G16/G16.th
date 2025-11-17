@@ -20,6 +20,30 @@ survey G16 -entrance 0
 		G16-galerie-marmites-2p
 	endmap
 
+	input G16-e.th2 
+
+	map m-all-e -projection extended
+		m1e
+		m-marmites-1e
+		m-marmites-2e [0 20 m] none
+		m-marmites-3e [0 20 m] none
+	endmap
+
+	map m1e -projection extended 
+		G16-1e
+	endmap
+
+	map m-marmites-1e -projection extended 
+		G16-marmites-1e
+	endmap
+	map m-marmites-2e -projection extended 
+		G16-marmites-2e
+	endmap
+	map m-marmites-3e -projection extended 
+		G16-marmites-3e
+	endmap
+
+
     centreline
         date 2020.08.01
         
