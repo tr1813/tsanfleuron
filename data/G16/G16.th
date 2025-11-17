@@ -30,7 +30,7 @@ survey G16 -entrance 0
 	endmap
 
 	map m1e -projection extended 
-		G16-1e
+		G16-entrance-1e
 	endmap
 
 	map m-marmites-1e -projection extended 

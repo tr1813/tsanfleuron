@@ -24,8 +24,12 @@ layout detailed-e
   copy custom_arrow
   copy custom_scalebar
 
+
 symbol-assign line survey MY
 symbol-color line rope [70 10 0]
+
+  symbol-colour point water-flow [0 57 100]
+  symbol-colour line water-flow [0 57 100]
 
 code metapost
 #_____________________________________________________________
