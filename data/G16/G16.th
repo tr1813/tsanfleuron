@@ -1,6 +1,6 @@
 
 
-survey G16 -entrance 0
+survey G16 -entrance 0 -title "G16 - Gouffre du Criquet Enragé"
     
     # entrance fix.
     centreline
@@ -23,14 +23,24 @@ survey G16 -entrance 0
 	input G16-e.th2 
 
 	map m-all-e -projection extended
-		m1e
-		m-marmites-1e
+		m-entrance-e
+		m-amonts-1e
+		m-amonts-3e [0 -20 m] none
+ 		m-marmites-1e
 		m-marmites-2e [0 20 m] none
 		m-marmites-3e [0 20 m] none
 	endmap
 
-	map m1e -projection extended 
+	map m-entrance-e -projection extended 
 		G16-entrance-1e
+	endmap
+	
+	map m-amonts-1e -projection extended 
+		G16-amonts-1e
+	endmap
+
+		map m-amonts-3e -projection extended 
+		G16-amonts-3e
 	endmap
 
 	map m-marmites-1e -projection extended 
@@ -46,7 +56,11 @@ survey G16 -entrance 0
 
     centreline
         date 2020.08.01
-        
+        team "[B.] Heiss"
+		team "[C.] Heiss"
+		team "[P.] Tacchini"
+		team "[M.] Wittwer"
+		team "Ludovic Savoy" 
         units length meters
         units compass grads
         units clino grads
@@ -855,8 +869,7 @@ survey G16 -entrance 0
 		202	.	1.98	166.3	-1.5	
 		202	.	1.98	168.3	-0.6	
 		extend ignore
-		202 202a 20 0 -90
-		202a	203	1.99	167.1	-1.1	
+		202	203	1.99	167.1	-1.1	
 		203	.	1.98	167.5	-3.6	
 		203	.	1.79	112.6	12.4	
 		203	.	1.58	55.6	19.2	
@@ -994,8 +1007,7 @@ survey G16 -entrance 0
 		210	.	0.28	82.6	-72.1	
 		210	.	1.81	251.8	16.6
 		extend right
-		210 210a 20 0 90
-		210a	211	1.8	252.4	17.0	
+		210	211	1.8	252.4	17.0	
 		211	.	0.88	151.9	5.6	
 		211	.	1.43	290.2	6.8	
 		211	.	2.49	293.0	16.2	
@@ -2173,8 +2185,7 @@ survey G16 -entrance 0
 		347	.	6.42	278.0	5.0	
 		347	.	4.93	313.0	5.0	
 		347	.	2.75	298.6	3.3	
-		318 318a 20 0 -90
-		318a	348	3.74	223.5	0.9	
+		318	348	3.74	223.5	0.9	
 		348	.	3.74	224.4	0.8	
 		348	.	0.34	66.5	84.8	
 		348	.	2.25	115.5	16.2	

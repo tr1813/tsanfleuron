@@ -18,6 +18,30 @@ layout local
   symbol-colour line rope [70 10 0]
   symbol-colour line u:deviation [70 10 0]
   symbol-colour point anchor [70 10 0]
+  code tex-map
+  #\framethickness=0.5mm
+  \def\xcenter{30}
+  \def\ycenter{50}
+  \def\xscale{10}
+  \def\yscale{10}
+  \legendwidth=5cm
+  # change this
+  \def\customheader{
+  \size[18]\bf \the\cavename{} 
+  \si \par \size[14]Commune de Savièse, Valais \ss
+  \par{ \quad} 
+  \size[14]\par \si Coordonnées :\ss { X: 587.320 / Y : 129.300 / Altitude : 2290 m  }\ss
+  \par \si Développement  :\ss { \the\cavelength}
+  \par \si Dénivellation  :\ss { \the\cavedepth}
+  \par \si{ Exploration :}\ss{ GSL, GSR, SCVJ, SCJ, GSP - 2003, 2020, 2025} 
+  \par \si Relevés topographiques  :\ss{ G. Heiss, P. Tacchini, M. Wittwer, T. Liardon, L. Berry, L. Stahelin, G. Saucy, T. Racine} 
+  \par \si Report et dessins :\ss{ G. Heiss, J. Perrin, L. Stahelin, T. Racine}}
+  
+  \def\maplayout{
+  \legendbox{\the\numexpr\xcenter+20\relax}{\the\numexpr\ycenter +7*\yscale\relax}{N}{\customheader}
+  \legendbox{\the\numexpr\xcenter+10\relax}{\the\numexpr\ycenter +1*\yscale\relax}{N}{\scalebar}
+ }
+ endcode
 endlayout 
 
 select m-all-e@G16
