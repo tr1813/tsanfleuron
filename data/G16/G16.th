@@ -25,6 +25,7 @@ survey G16 -entrance 0 -title "G16 - Gouffre du Criquet Enragé"
 	map m-all-e -projection extended
 		m-entrance-e
 		m-amonts-1e
+		m-amonts-2e [0 -20 m] none
 		m-amonts-3e [0 -20 m] none
  		m-marmites-1e
 		m-marmites-2e [0 20 m] none
@@ -37,6 +38,10 @@ survey G16 -entrance 0 -title "G16 - Gouffre du Criquet Enragé"
 	
 	map m-amonts-1e -projection extended 
 		G16-amonts-1e
+	endmap
+	
+	map m-amonts-2e -projection extended 
+		G16-amonts-2e
 	endmap
 
 		map m-amonts-3e -projection extended 
