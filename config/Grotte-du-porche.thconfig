@@ -1,0 +1,2 @@
+source ../data/GrotteDuPorche/GrotteDuPorche.th 
+export model -o ../outputs/GrotteDuPorche -fmt esri
