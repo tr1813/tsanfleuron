@@ -12,6 +12,8 @@ survey G16 -entrance 0 -title "G16 - Gouffre du Criquet Enragé"
 	input G16-p.th2 
 
 	map m-all-p -projection plan 
+		G16-entrance-3p
+		break
 		G16-amonts-1p
 		G16-amonts-2p
 		G16-entrance-1p

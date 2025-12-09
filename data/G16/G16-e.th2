@@ -4717,11 +4717,53 @@ endscrap
 
 scrap G16-amonts-1e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 
+point 3820.02 -1514.17 continuation 
+line rock-border -close on
+  3620.7837 -1506.1589
+  3617.24 -1499.8816
+  3598.5094 -1498.9704
+  3587.676 -1498.4642
+  3583.2211 -1502.7165
+  3583.3224 -1507.4751
+  3618.7587 -1505.8552
+  3620.7837 -1506.1589
+endline
+
+line rock-edge 
+  1862.5338 -1264.8881
+  1853.4217 -1265.2931
+endline
+
+line rock-edge 
+  1811.303 -1254.7635
+  1828.515 -1254.3585
+  1841.677 -1260.2308
+  1852.8142 -1265.2931
+  1858.889 -1275.2153
+endline
+
+line rock-border -close on
+  1860.1039 -1277.0377
+  1863.5463 -1263.8757
+  1845.9294 -1257.8009
+  1822.2377 -1248.8912
+  1808.2657 -1245.6513
+  1809.0756 -1263.4707
+  1841.8795 -1274.4053
+  1860.1039 -1277.0377
+endline
+
+line arrow 
+  2876.6363 -1376.6821
+  2902.9822 -1411.6191
+endline
+
 point 2911.8545 -1442.4749 flowstone 
 point 2826.4021 -1424.8579 flowstone 
 point 2707.3362 -1407.8484 flowstone 
 point 2315.6253 -1525.4648 stalactite 
 point 2649.6255 -1360.4651 stalactite 
+point 2645.4418 -1672.7543 pillar 
 point 2683.4418 -1367.7546 stalactite 
 line u:texture 
   1568.1085 -1200.2928
@@ -5007,6 +5049,7 @@ line wall
 endline
 
 point 569.874 -1064.43 continuation -scale l
+point 3081.3479 -1517.222 label -align tr -scale l -text "voûte mouillante"
 point 320.597 -1080.38 label -align tr -scale l -text "voûte mouillante"
 point 1415.55 -1264.71 label -align tr -scale l -text marmites
 line border -close on -id G16-amonts-1e_water_3 -visibility on
@@ -5238,6 +5281,21 @@ area water
 endarea
 
 line border -close on -id G16-amonts-1e_water_9 -visibility on
+  3573.6582 -1529.8975
+  3570.3333 -1517.4887
+  3541.0568 -1517.4887
+  3542.6575 -1523.4626
+  3542.7768 -1533.5488
+  3562.1424 -1536.1341
+  3573.6582 -1529.8975
+  3573.6582 -1529.8975
+endline
+
+area water 
+  G16-amonts-1e_water_9
+endarea
+
+line border -close on -id G16-amonts-1e_water_10 -visibility on
   3531.9583 -1525.0475
   3528.6334 -1512.6387
   3499.3569 -1512.6387
@@ -5249,10 +5307,10 @@ line border -close on -id G16-amonts-1e_water_9 -visibility on
 endline
 
 area water 
-  G16-amonts-1e_water_9
+  G16-amonts-1e_water_10
 endarea
 
-line border -close on -id G16-amonts-1e_water_10 -visibility on
+line border -close on -id G16-amonts-1e_water_11 -visibility on
   3693.8837 -1547.1639
   3690.5588 -1534.7551
   3661.2823 -1534.7551
@@ -5264,10 +5322,10 @@ line border -close on -id G16-amonts-1e_water_10 -visibility on
 endline
 
 area water 
-  G16-amonts-1e_water_10
+  G16-amonts-1e_water_11
 endarea
 
-line border -close on -id G16-amonts-1e_water_11 -visibility on
+line border -close on -id G16-amonts-1e_water_12 -visibility on
   3748.2818 -1556.9874
   3748.2818 -1555.8419 3747.9954 -1548.11 3747.9954 -1548.11
   3715.3494 -1548.11
@@ -5277,10 +5335,10 @@ line border -close on -id G16-amonts-1e_water_11 -visibility on
 endline
 
 area water 
-  G16-amonts-1e_water_11
+  G16-amonts-1e_water_12
 endarea
 
-line border -close on -id G16-amonts-1e_water_12 -visibility on
+line border -close on -id G16-amonts-1e_water_13 -visibility on
   3876.575 -1591.0653
   3876.8614 -1589.3471 3879.1524 -1582.4742 3876.575 -1582.4742
   3873.9977 -1582.4742 3822.7377 -1582.4742 3822.7377 -1582.4742
@@ -5291,10 +5349,10 @@ line border -close on -id G16-amonts-1e_water_12 -visibility on
 endline
 
 area water 
-  G16-amonts-1e_water_12
+  G16-amonts-1e_water_13
 endarea
 
-line border -close on -id G16-amonts-1e_water_13 -visibility on
+line border -close on -id G16-amonts-1e_water_14 -visibility on
   4677.8351 -1668.3849
   4558.7056 -1668.3849
   4558.7056 -1668.3849 4557.2738 -1670.6758 4560.1375 -1677.5487
@@ -5308,10 +5366,10 @@ line border -close on -id G16-amonts-1e_water_13 -visibility on
 endline
 
 area water 
-  G16-amonts-1e_water_13
+  G16-amonts-1e_water_14
 endarea
 
-line border -close on -id G16-amonts-1e_water_14 -visibility on
+line border -close on -id G16-amonts-1e_water_15 -visibility on
   1431.7332 -1199.2499
   1466.9703 -1199.2499
   1468.4822 -1204.0016
@@ -5334,10 +5392,10 @@ line border -close on -id G16-amonts-1e_water_14 -visibility on
 endline
 
 area water 
-  G16-amonts-1e_water_14
+  G16-amonts-1e_water_15
 endarea
 
-line border -close on -id G16-amonts-1e_water_15 -visibility on
+line border -close on -id G16-amonts-1e_water_16 -visibility on
   732.8179 -1069.874
   712.4846 -1069.832
   662.656 -1069.729
@@ -5354,7 +5412,7 @@ line border -close on -id G16-amonts-1e_water_15 -visibility on
 endline
 
 area water 
-  G16-amonts-1e_water_15
+  G16-amonts-1e_water_16
 endarea
 
 line wall 
@@ -5410,9 +5468,12 @@ line wall
   3498.2818 -1511.4548 3508.0183 -1518.3276 3511.4548 -1518.3276
   3514.8912 -1518.3276 3523.4822 -1512.6002 3526.3459 -1511.4548
   3529.2096 -1510.3093 3534.937 -1513.173 3534.937 -1513.173
-  3534.937 -1513.173 3546.9645 -1512.6002 3550.9737 -1514.3184
-  3554.9828 -1516.0367 3554.4101 -1514.8912 3556.701 -1516.0367
-  3558.992 -1517.1821 3572.165 -1516.6094 3572.165 -1516.6094
+  3534.937 -1513.173 3546.9646 -1512.6001 3550.9737 -1514.3184
+  3552.8989 -1515.1435 3548.4478 -1522.1235 3548.9127 -1526.0088
+  3549.416 -1530.2143 3554.7943 -1531.3348 3555.9851 -1531.9302
+  3556.3527 -1532.114 3563.4017 -1533.1641 3564.3565 -1530.4712
+  3565.9452 -1525.9902 3561.8042 -1516.7173 3563.7267 -1516.7427
+  3567.8479 -1516.7967 3572.165 -1516.6094 3572.165 -1516.6094
   3580.756 -1521.1913
   3580.756 -1521.1913 3598.5109 -1520.0458 3598.5109 -1522.3368
   3598.5109 -1524.6277 3616.2658 -1534.937 3618.5567 -1530.9278
@@ -5583,7 +5644,10 @@ endline
 
 point 1284.8 -1033.71 label -align tr -scale l -text "Amont aux Marmites"
 point 3693.12 -1604.86 label -align tr -scale l -text marmites
-point 2844.2058 -1395.4661 label -align tr -scale l -text "planchers stalagmitiques<br>corrodés"
+point 2816.7144 -1360.5291 label -align tr -scale l -text "planchers stalagmitiques<br>corrodés"
+point 1128.6303 -1089.4648 stalactite 
+point 802.6303 -1052.4648 stalactite 
+point 715.6303 -1046.4648 stalactite 
 line wall 
   4736.827 -1664.3757
   4736.827 -1664.3757 4708.4765 -1658.362 4706.4719 -1657.5029
@@ -5610,9 +5674,19 @@ line wall
   3956.7583 -1580.4696 3930.126 -1577.606 3926.9759 -1575.0286
   3923.8259 -1572.4513 3904.0664 -1562.4284 3902.0619 -1562.142
   3900.0573 -1561.8557 3888.6025 -1563.5739 3884.8797 -1561.5693
-  3881.1569 -1559.5647 3842.7835 -1552.6919 3838.7743 -1550.9737
-  3834.7652 -1549.2554 3802.6919 -1540.9507 3790.0916 -1537.8007
-  3777.4914 -1534.6506 3754.2955 -1530.6415 3752.5773 -1530.3551
+  3882.8559 -1560.4796 3870.592 -1557.9511 3859.1754 -1555.5942
+  3857.1667 -1555.1795 3864.9773 -1542.5705 3856.0891 -1532.8154
+  3854.6051 -1531.1867 3844.2162 -1530.0632 3836.2234 -1526.0055
+  3830.0562 -1522.8745 3825.7211 -1516.4323 3825.4842 -1516.3825
+endline
+
+line wall 
+  3815.4889 -1530.3868
+  3815.1568 -1530.2444 3820.4702 -1534.5433 3825.925 -1537.576
+  3829.703 -1539.6764 3834.1449 -1540.4244 3834.3701 -1541.7388
+  3835.1436 -1546.2544 3830.4153 -1548.3877 3826.9583 -1547.4363
+  3815.3395 -1544.2384 3798.4407 -1539.8879 3790.0916 -1537.8007
+  3777.4914 -1534.6507 3754.2955 -1530.6415 3752.5773 -1530.3551
   3750.8591 -1530.0687 3739.4044 -1531.2142 3735.9679 -1528.6369
   3732.5315 -1526.0596 3703.0355 -1522.0504 3700.4582 -1519.1867
   3697.8809 -1516.323 3687.5716 -1511.7411 3684.1352 -1510.0229
@@ -11305,6 +11379,16 @@ endscrap
 
 scrap G16-amonts-3e -projection extended -scale [0 0 96 0 0 0 250 0 inch]
 
+line arrow 
+  2195.5 -1682.5
+  2252.201 -1651.5721
+endline
+
+line arrow 
+  2581.9015 -1627.7205
+  2638.6025 -1691.8671
+endline
+
 line wall 
   2521.6497 -1691.3391
   2522.8647 -1691.3391 2528.9395 -1692.9591 2532.7868 -1694.3765
@@ -11368,8 +11452,10 @@ line wall -subtype sand
   2468.2131 -1684.9943 2520.9049 -1690.4353 2520.9049 -1690.4353
 endline
 
+point 2246.77 -1543.26 low-end -scale l
+point 2212.92 -1629.25 continuation -scale l
 point 2683.92 -1546.25 continuation -scale l
-point 2615.34 -1761.18 label -align tr -scale l -text "colonnes fracturées"
+point 2491.0601 -1620.2828 label -align tr -scale l -text "colonnes fracturées"
 point 2030.7739 -1745.515 label -align tr -scale l -text "galets scellés<br>dans plancher stalagmitique"
 point 2716.0046 -1551.255 label -align tr -scale l -text "voûte mouillante"
 line wall -subtype presumed
@@ -11423,7 +11509,7 @@ line wall
   2557.6935 -1549.7963 2603.862 -1550.4038 2605.6844 -1550.4038
 endline
 
-line wall 
+line wall -subtype flowstone
   2222.3645 -1629.5787
   2225.6044 -1630.1861 2239.5765 -1639.2983 2243.0189 -1639.9058
   2246.4612 -1640.5133 2253.751 -1639.2983 2258.6108 -1642.1332
