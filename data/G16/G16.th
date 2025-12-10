@@ -14,10 +14,12 @@ survey G16 -entrance 0 -title "G16 - Gouffre du Criquet Enragé"
 	map m-all-p -projection plan 
 		G16-entrance-3p
 		break
+		G16-entrance-2p
+		break
+		G16-entrance-1p		
+		break
 		G16-amonts-1p
 		G16-amonts-2p
-		G16-entrance-1p
-		G16-entrance-2p
 		G16-galerie-marmites-1p
 		G16-galerie-marmites-2p
 	endmap
