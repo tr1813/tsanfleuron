@@ -15,6 +15,7 @@ layout local
   symbol-hide line survey
   symbol-hide point station
   color map-bg transparent
+  color map-fg altitude
   symbol-colour line rope [70 10 0]
   symbol-colour line u:deviation [70 10 0]
   symbol-colour point anchor [70 10 0]
