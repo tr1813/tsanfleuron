@@ -73,6 +73,21 @@ layout custom_arrow
 		enddef;
 endlayout
 
+layout custom_arrow_swiss
+	code metapost
+			def s_northarrow (expr rot) =
+		  	begingroup
+			    interim defaultscale:=0.5; % scale your north arrow here
+			    T:=identity scaled defaultscale rotated -rot;
+				pickup PenD;
+			    thdraw (-.6cm,-1.2cm)--(0,2.8cm)--(.6cm,-1.2cm)--(0, -1cm)--cycle withcolor(0,0,0);
+			    thfill (0,-1cm)--(0,2.8cm)--(.6cm,-1.2cm)--cycle withcolor(0,0,0);
+				label.lrt(thTEX("\size[10] \bf Ng \thinspace"), (0,-1cm) shifted (0.38cm,2.8cm) rotated -rot scaled defaultscale);
+			endgroup;
+		enddef;
+	endcode
+endlayout 
+
 layout custom_arrow_dark
 	code metapost
 	    #(contributions of Thomas Holder)

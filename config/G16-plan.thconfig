@@ -15,10 +15,12 @@ layout local
   symbol-hide line survey
   symbol-hide point station
   color map-bg transparent
-  color map-fg altitude
+  #color map-fg altitude
   symbol-colour line rope [70 10 0]
   symbol-colour line u:deviation [70 10 0]
   symbol-colour point anchor [70 10 0]
+  symbol-assign area water MYEE
+
   code tex-map
   #\framethickness=0.5mm
   \def\xcenter{30}
@@ -39,9 +41,9 @@ layout local
   \par \si Report et dessins :\ss{ G. Heiss, J. Perrin, L. Stahelin, T. Racine}}
   
   \def\maplayout{
-  \legendbox{\the\numexpr\xcenter+10\relax}{\the\numexpr\ycenter +5*\yscale\relax}{N}{\customheader}
+  \legendbox{\the\numexpr\xcenter+10\relax}{\the\numexpr\ycenter +4*\yscale\relax}{N}{\customheader}
   \legendbox{\the\numexpr\xcenter-10\relax}{\the\numexpr\ycenter +1*\yscale\relax}{N}{\scalebar}
-  \legendbox{\the\numexpr\xcenter-10\relax}{\the\numexpr\ycenter +1*\yscale\relax}{N}{\northarrow}
+  \legendbox{\the\numexpr\xcenter-10\relax}{\the\numexpr\ycenter+ 2 +1*\yscale\relax}{S}{\northarrow}
  }
  endcode
 endlayout

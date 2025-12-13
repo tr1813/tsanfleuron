@@ -12,7 +12,7 @@ layout detailed-p
   copy custom_points
   copy custom_lines
   copy custom_areas
-  copy custom_arrow
+  copy custom_arrow_swiss
   copy custom_scalebar
 
 
@@ -29,6 +29,7 @@ layout detailed-p
   symbol-assign line survey MY
   symbol-hide point passage-height
   symbol-colour point station-name [70 0 0]
+  symbol-assign line section MY
 
   ## water and ice
   symbol-assign area ice MY
