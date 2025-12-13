@@ -24,6 +24,9 @@ layout detailed-e
   copy custom_arrow
   copy custom_scalebar
 
+  fonts-setup 6 7 10 14 22
+
+
 
 symbol-assign line survey MY
 symbol-color line rope [70 10 0]

@@ -20,6 +20,13 @@ layout local
   symbol-colour line u:deviation [70 10 0]
   symbol-colour point anchor [70 10 0]
   symbol-assign area water MYEE
+  symbol-assign point stalactite UIS
+  symbol-assign point stalagmite UIS
+  symbol-assign point pillar UIS
+  symbol-colour point stalactite [0 0 0]
+  symbol-colour point stalagmite [0 0 0]
+  symbol-colour point pillar [0 0 0]
+
 
   code tex-map
   #\framethickness=0.5mm
@@ -50,4 +57,5 @@ endlayout
 
 export map -o ../outputs/G16-plan.pdf -layout local
 export model -o ../outputs/G16.3d
+export model -o ../outputs/G16.lox
 export model -o ../outputs/G16 -fmt esri

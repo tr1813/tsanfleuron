@@ -24,6 +24,14 @@ survey G16 -entrance 0 -title "G16 - Gouffre du Criquet Enragé"
 		G16-galerie-marmites-2p
 	endmap
 
+	## join the different scraps
+	join G16-amonts-1p G16-amonts-2p
+	join G16-amonts-1p G16-entrance-1p
+	join G16-galerie-marmites-1p G16-galerie-marmites-2p
+	join G16-galerie-marmites-1p G16-entrance-1p
+	join G16-entrance-2p G16-entrance-1p
+
+
 	input G16-e.th2 
 
 	map m-all-e -projection extended
