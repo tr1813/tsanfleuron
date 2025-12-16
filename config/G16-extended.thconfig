@@ -18,12 +18,16 @@ layout local
   symbol-colour line rope [70 10 0]
   symbol-colour line u:deviation [70 10 0]
   symbol-colour point anchor [70 10 0]
+  symbol-colour point stalagmite [0 0 0]
+  symbol-colour point stalactite [0 0 0]
+  symbol-colour point pillar [0 0 0]
+
   code tex-map
   #\framethickness=0.5mm
-  \def\xcenter{30}
-  \def\ycenter{50}
-  \def\xscale{10}
-  \def\yscale{10}
+  \def\xcenter{0}
+  \def\ycenter{0}
+  \def\xscale{5}
+  \def\yscale{5}
   \legendwidth=5cm
   # change this
   \def\customheader{
@@ -38,11 +42,11 @@ layout local
   \par \si Report et dessins :\ss{ G. Heiss, J. Perrin, L. Stahelin, T. Racine}}
   
   \def\maplayout{
-  \legendbox{\the\numexpr\xcenter+20\relax}{\the\numexpr\ycenter +7*\yscale\relax}{N}{\customheader}
-  \legendbox{\the\numexpr\xcenter+10\relax}{\the\numexpr\ycenter +1*\yscale\relax}{N}{\scalebar}
+  \legendbox{\the\numexpr\xcenter+10*\xscale\relax}{\the\numexpr\ycenter+2*\yscale\relax}{N}{\customheader}
+  \legendbox{\the\numexpr\xcenter+10*\xscale\relax}{\the\numexpr\ycenter+11*\yscale\relax}{N}{\scalebar}
  }
  endcode
 endlayout 
 
 select m-all-e@G16
-export map -o ../outputs/G16-extended.pdf -layout local -projection extended
+export map -o ../outputs/G16-extended.pdf -layout local -projection extended #-layout-debug all
