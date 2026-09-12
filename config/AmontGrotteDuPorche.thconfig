@@ -1,4 +1,4 @@
-source ../data/GrotteDuPorche/GrotteDuPorche.th 
+source ../data/AmontGrotteDuPorche/AmontGrotteDuPorche.th 
 input ../layouts/detailed-p.thl 
 
 layout local
@@ -30,7 +30,7 @@ layout local
 
 endlayout
 
-export map -o ../outputs/Grotte-du-Porche-plan.pdf -layout local
-#export model -o ../outputs/Grotte-du-porche.3d
-#export model -o ../outputs/Grotte-du-porche -fmt esri
+export map -o ../outputs/AmontGrotteDuPorche-plan.pdf -layout local
+export model -o ../outputs/AmontGrotteDuPorche.3d
+export model -o ../outputs/AmontGrotteDuPorche -fmt esri
 #export map -o ../outputs/Grotte-du-porche -fmt esri

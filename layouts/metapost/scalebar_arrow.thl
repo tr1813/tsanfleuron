@@ -123,6 +123,7 @@ layout custom_scalebar
 				 tmp100:=100 * (l / Scale * cm * units / 100);
 				 scal10:=10 * l / 100;
 				 scal20:=20 * l / 100;
+				 scal25:=25 * l / 100;
 				 scal30:=30 * l / 100;
 				 scal40:=40 * l / 100;
 				 scal50:=50 * l / 100;
@@ -156,6 +157,8 @@ layout custom_scalebar
 			      label.top(thTEX("\size[8]" & decimal (scal20)),origin+(tmp20,1.5*lblht));
 			      label.top(thTEX("\size[8]" & decimal (scal10)),origin+(tmp10,1.5*lblht));
 			      label.top(thTEX("\size[8]" & decimal (0)),origin+(0,1.5*lblht));
+				  label.top(thTEX("\size[10] \bf 1 : \thinspace" & decimal (Scale*100)), origin+(scal25*10,-2.5*lblht));
+
 			    endgroup
 			enddef;
 		endcode

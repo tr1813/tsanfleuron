@@ -1,0 +1,8 @@
+survey Tsanfleuron
+    input Tsanfleuron_clean/Tsanfleuron_clean.th
+    input G16/G16.th
+    input AmontGrotteDuPorche/AmontGrotteDuPorche.th
+    input GrotteDuPorche/GrotteDuPorche.th
+    input PuitsFonteAstique/PuitsFonteAstique.th
+
+endsurvey

@@ -1,0 +1,5 @@
+encoding  utf-8
+source ../data/index.th
+export model -o  ../outputs/Tsanfleuron.3d
+export model -o  ../outputs/Tsanfleuron.lox
+export model -o  ../outputs/Tsanfleuron -fmt esri

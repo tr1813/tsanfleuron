@@ -1,0 +1,47 @@
+source ../data/GrotteDuPorche/GrotteDuPorche.th 
+
+input ../layouts/detailed-e.thl 
+
+layout local
+  copy detailed-e
+  scale 1 500
+  legend off
+  map-header 0 0 off
+  symbol-show point label
+  symbol-hide point passage-height
+  symbol-assign line wall:blocks MYEE
+  
+  symbol-hide point station-name 
+  symbol-hide line survey
+  symbol-hide point station
+  color map-bg transparent
+  symbol-colour line rope [70 10 0]
+  symbol-colour line u:deviation [70 10 0]
+  symbol-colour point anchor [70 10 0]
+  symbol-colour point stalagmite [0 0 0]
+  symbol-colour point stalactite [0 0 0]
+  symbol-colour point pillar [0 0 0]
+
+  code tex-map
+  #\framethickness=0.5mm
+  \def\xcenter{0}
+  \def\ycenter{0}
+  \def\xscale{5}
+  \def\yscale{5}
+  \legendwidth=5cm
+  # change this
+  \def\customheader{
+  \size[18]\bf \the\cavename{} 
+  \si \par \size[14]Commune de Savièse, Valais \ss
+  \par{ \quad} }
+
+  \def\maplayout{
+  \legendbox{\the\numexpr\xcenter+10*\xscale\relax}{\the\numexpr\ycenter+2*\yscale\relax}{N}{\customheader}
+  \legendbox{\the\numexpr\xcenter+10*\xscale\relax}{\the\numexpr\ycenter-6*\yscale\relax}{N}{\scalebar}
+
+ }
+ endcode
+endlayout 
+
+select m-all-e@Grotte-du-porche
+export map -o ../outputs/Grotte-du-porche-extended.pdf -layout local -projection extended #-layout-debug all

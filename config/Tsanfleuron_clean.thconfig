@@ -1,0 +1,5 @@
+encoding  utf-8
+source ../data/Tsanfleuron_clean/Tsanfleuron_clean.th
+export model -o  ../outputs/Tsanfleuron_clean.3d
+export model -o  ../outputs/Tsanfleuron_clean.lox
+export model -o  ../outputs/Tsanfleuron_clean -fmt esri

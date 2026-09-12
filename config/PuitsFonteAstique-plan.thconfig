@@ -1,4 +1,4 @@
-source ../data/G16/G16.th 
+source ../data/PuitsFonteAstique/PuitsFonteAstique.th 
 
 input ../layouts/detailed-p.thl 
 
@@ -27,36 +27,33 @@ layout local
   symbol-colour point stalagmite [0 0 0]
   symbol-colour point pillar [0 0 0]
 
-
   code tex-map
   #\framethickness=0.5mm
-  \def\xcenter{30}
-  \def\ycenter{50}
-  \def\xscale{10}
-  \def\yscale{10}
-  \legendwidth=5cm
+  \def\xcenter{0}
+  \def\ycenter{0}
+  \def\xscale{1}
+  \def\yscale{1}
+  \legendwidth=10cm
   # change this
   \def\customheader{
   \size[18]\bf \the\cavename{} 
   \si \par \size[14]Commune de Savièse, Valais \ss
   \par{ \quad} 
-  \size[14]\par \si Coordonnées :\ss { X: 587.320 / Y : 129.300 / Altitude : 2290 m  }\ss
+  \size[14]\par \si Coordonnées :\ss { X: 2'584'263 / Y : 1'129'711 / Altitude : 2650 m  }\ss
   \par \si Développement  :\ss { \the\cavelength}
   \par \si Dénivellation  :\ss { \the\cavedepth}
-  \par \si{ Exploration :}\ss{ GSL, GSR, SCVJ, SCJ, GSP - 2003, 2020, 2025} 
-  \par \si Relevés topographiques  :\ss{ G. Heiss, P. Tacchini, M. Wittwer, T. Liardon, L. Berry, L. Stahelin, G. Saucy, T. Racine} 
-  \par \si Report et dessins :\ss{ G. Heiss, J. Perrin, L. Stahelin, T. Racine}}
+  \par \si{ Exploration :}\ss{ SCJ, GSP - 2026} 
+  \par \si Relevés topographiques  :\ss{ R. Colton, M. Perne, E. Serrat \&  T. Racine} 
+  \par \si Report et dessins :\ss{ T. Racine}}
   
   \def\maplayout{
-  \legendbox{\the\numexpr\xcenter+20\relax}{\the\numexpr\ycenter +5*\yscale\relax}{N}{\customheader}
-  \legendbox{\the\numexpr\xcenter-5\relax}{\the\numexpr\ycenter +1*\yscale\relax}{N}{\scalebar}
-  \legendbox{\the\numexpr\xcenter-5\relax}{\the\numexpr\ycenter+ 2 +1*\yscale\relax}{S}{\northarrow}
+  #%\legendbox{\the\numexpr\xcenter+5\xscale\relax}{\the\numexpr\ycenter+10*\yscale\relax}{N}{\customheader}
+  #%\legendbox{\the\numexpr\xcenter+25*\xscale\relax}{\the\numexpr\ycenter-4*\yscale\relax}{N}{\scalebar}
+  \legendbox{\the\numexpr\xcenter+95*\xscale\relax}{\the\numexpr\ycenter+70*\yscale\relax}{SW}{\northarrow}
+
  }
  endcode
-endlayout
+endlayout 
 
-export map -o ../outputs/G16-plan.pdf -layout local
-export model -o ../outputs/G16.3d
-export model -o ../outputs/G16.lox
-export model -o ../outputs/G16 -fmt esri
-export map -o ../outputs/G16 -fmt esri
+select m-all-p@PuitsFonteAstique
+export map -o ../outputs/PuitsFonteAstique-plan.pdf -layout local
