@@ -1,9 +1,21 @@
 # therion outputs
-tsanfleuron/outputs/*
+
 */outputs/*
 *.pdf
 *.log 
 *.3d
+*.tif
+*.lox 
+*.prj
+
+*.shp 
+*.dbf 
+*.xml
+*.shx
+*.jpg
+*.jpeg
+
+# 
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
