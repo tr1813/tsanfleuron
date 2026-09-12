@@ -5,12 +5,22 @@ survey GrotteDuPorche -title "Site 009 Grotte du Porche"
   input GrotteDuPorche-1p.th2
   input GrotteDuPorche-1s.th2
 
+  #input ../dem/grotte_du_porche_dem.th
+
   map m-all-p -projection plan
     GrotteDuPorche-1p
   endmap
 
   map m-all-e -projection extended
+    m1e
+    m2e [0 15 m] none
+  endmap
+  
+  map m1e -projection extended
     GrotteDuPorche-1s
+  endmap
+  map m2e -projection extended
+    GrotteDuPorche-2s 
   endmap
 
   centerline -title "entree"

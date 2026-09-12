@@ -1,0 +1,14 @@
+encoding utf-8
+##XTHERION## xth_me_area_adjust -100.0 -100.0 100.0 100.0
+##XTHERION## xth_me_area_zoom_to 25
+
+# 2026.09.07 created by TopoDroid v. 6.3.63
+
+scrap G16-amont-grande-marmite-1s -projection extended -scale [0 0 19.6850 0 0 0 1 0 m]
+
+
+
+
+
+endscrap
+
